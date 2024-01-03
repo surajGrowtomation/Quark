@@ -20,7 +20,7 @@ from api import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('expeditionIndex/', views.expeditionIndex,name="expeditionIndex"),
+    path('', views.expeditionIndex,name="expeditionIndex"),
     path('expedition/<int:id>/', views.expeditionDetails,name="expeditionDetails"),
     path('itineraryIndex/', views.itineraryIndex,name="itineraryIndex"),
     path('itinerary/<int:id>/', views.itineraryDetails,name="itineraryDetails"),
